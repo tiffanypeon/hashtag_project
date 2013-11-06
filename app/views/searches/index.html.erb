@@ -1,0 +1,12 @@
+<h1> Is This A Hashtag? </h1> 
+<br>
+<%= form_for(@search) do |f| %> 
+  <div class ="field"> 
+    <%= f.text_field :original_string %> 
+  </div>
+
+  <div class="actions"> 
+    <%= f.submit '#twitterproblems'%> 
+  </div>
+<% end %> 
+
