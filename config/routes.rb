@@ -1,6 +1,6 @@
 HashtagSearch::Application.routes.draw do
   resources :answers
-  resources :searches
+  resources :searches, only: [:index]
 
   root 'searches#index'
   # The priority is based upon order of creation: first created -> highest priority.
