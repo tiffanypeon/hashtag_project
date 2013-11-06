@@ -1,8 +1,10 @@
 HashtagSearch::Application.routes.draw do
-  resources :answers
-  resources :searches, only: [:index]
+  resources :answers, only: [:index]
+  resources :searches, only: [:index, :create]
 
   root 'searches#index'
+
+  get '/answers' => 'answers#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

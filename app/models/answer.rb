@@ -1,7 +1,6 @@
 class Answer < ActiveRecord::Base
-
   has_many :searches
-  
+
   def search=(search_results)
     search_results
   end
